@@ -1,0 +1,71 @@
+/* Estilos para el fondo tenue */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Estilos del contenido del modal */
+  .modal-content {
+    background-color: rgb(250, 248, 248); /* Fondo del modal blanco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 400px; /* Ajusta el tamaño del modal */
+    max-width: 90%;
+    position: relative; /* Necesario para posicionar el botón de cerrar */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido */
+  }
+  
+  /* Botón de cerrar el modal */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close-btn:hover {
+    color: red; /* Cambia el color al pasar el mouse */
+  }
+  
+  /* Estilos para los campos del formulario */
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Botón de agregar receta */
+  .modal-content button {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+  }
+  

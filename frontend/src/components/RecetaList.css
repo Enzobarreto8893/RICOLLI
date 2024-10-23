@@ -1,0 +1,146 @@
+/* Estilos generales de la lista de recetas */
+.receta-list {
+    padding: 40px;
+    text-align: left;
+    background-color: #f8f9fa; /* Fondo similar al de la primera imagen */
+  }
+  
+  .receta-list h2 {
+    font-size: 2.5rem; /* Aumentamos el tamaño del título */
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Grid de recetas */
+  .recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajustamos el tamaño mínimo */
+    gap: 30px;
+  }
+  
+  /* Estilo para cada tarjeta de receta */
+  .receta-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Imagen de la receta */
+  .receta-image img {
+    width: 100%;
+    height: 200px; /* Ajustamos el alto para que las imágenes sean uniformes */
+    object-fit: cover; /* Esto asegura que la imagen se recorte sin deformarse */
+    border-bottom: 4px solid #ff6b6b; /* Similar al estilo de las recetas en la imagen de referencia */
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Contenido de la receta */
+  .receta-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .receta-content h3 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .receta-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Hover effect para las tarjetas */
+  .receta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ajustes para la visualización de la fecha y otras etiquetas */
+  .receta-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  .receta-info .receta-fecha {
+    font-weight: bold;
+  }
+  
+  .receta-info .receta-comentarios {
+    font-style: italic;
+    color: #ff6b6b;
+  }
+   .eliminar-btn {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+   .eliminar-btn:hover {
+    background-color: #0056b3;
+  }
+  /* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modal .receta-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+ .eliminar-btn {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+   .eliminar-btn:hover {
+    background-color: #0056b3;
+  }
+  .receta-card {
+    cursor: pointer;
+  }
+  

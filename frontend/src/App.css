@@ -1,0 +1,155 @@
+/* Estilos generales */
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  height: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-section-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  width: 50%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para levantar el div */
+.card:hover {
+  transform: translateY(-10px); /* Se levanta */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Estilo del texto dentro de los divs */
+.card h3 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra al texto */
+}
+
+/* Nuevo código añadido para el botón y el modal */
+/* Botón en la esquina superior derecha */
+.add-recipe-btn {
+  background-color: #28a745; /* Verde más suave */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Botón redondeado */
+  padding: 10px 20px; /* Tamaño ajustado */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end; /* Para alinearlo en la parte superior derecha */
+  margin-right: 20px;
+}
+
+.add-recipe-btn:hover {
+  background-color: #218838; /* Color ligeramente más oscuro al pasar el mouse */
+}
+
+/* Estilos del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.close-modal-button:hover {
+  background-color: #c82333;
+}
+.recetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.receta-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receta-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.receta-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.receta-card p {
+  font-size: 1rem;
+  color: #555;
+}
